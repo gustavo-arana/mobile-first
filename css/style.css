@@ -13,10 +13,11 @@
   --soft-blue: #e7f5ff;
   --warm-black: #201e1c;
   --black: #282623;
-  --grey: #bababa;
-  --grey-text: #808080;
+  --grey: ##777777;
+  --grey-text: #5f5c5c;
   --off-white: #faf8f7;
   --just-white: #ffffff;
+  --just-white-text: #ccc;
 }
 
 * {
@@ -147,7 +148,7 @@ main {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.6rem;
-  color: #757575;
+  color: var(--grey-text);
 }
 
 .main-tables-container {
@@ -173,15 +174,7 @@ main {
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.3rem;
-  color: var(--bitcoin-orange);
-}
-
-.main-currency-table .comission-table--tittle {
-  margin-bottom: 15px;
-  font-size: 1.8rem;
-  font-weight: bold;
-  line-height: 2.3rem;
-  color: var(--secondary-blue);
+  color: var(--black);
 }
 
 .currency-table--container {
@@ -229,7 +222,7 @@ main {
   font-size: 1.4rem;
   font-weight: normal;
   line-height: 1.7rem;
-  color: #757575;
+  color: var(--grey-text);
 }
 
 .currency-table--container .down {
@@ -322,7 +315,7 @@ main {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
-  color: var(--grey-text);
+  color: var(--just-white-text);
 }
 
 .product-detail--card {
@@ -395,7 +388,7 @@ main {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
-  color: var(--grey-text);
+  color: var(--just-white-text);
 }
 
 .bitcoin-img-container {
@@ -445,7 +438,7 @@ main {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
-  color: #757575;
+  color: var(--grey-text);
 }
 
 .plans-container--slider {
@@ -479,9 +472,10 @@ main {
   left: calc(50% - 60px);
   font-size: 1.2rem;
   font-weight: bold;
-  background-color: var(--bitcoin-orange);
+  background-color: var(--soft-orange);
+  border: 2px solid var(--bitcoin-orange);
   border-radius: 8px;
-  color: var(--just-white);
+  color: var(--black);
 }
 
 .plan-card--tittle {
@@ -511,7 +505,7 @@ main {
   font-size: 1.2rem;
   font-weight: 500;
   list-style: 1.4rem;
-  color: #757575;
+  color: var(--grey-text);
   font-family: "Inter", sans-serif;
 }
 
@@ -557,7 +551,7 @@ footer section {
 
 footer .left ul {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 1.8rem;
   list-style: none;
 }
@@ -568,5 +562,10 @@ footer .left li {
 
 footer .left a {
   text-decoration: none;
-  color: var(--just-white);
+  color: var(--black);
+}
+
+.right img {
+  width: 60px;
+  height: 40px;
 }
